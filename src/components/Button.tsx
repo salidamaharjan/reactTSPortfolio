@@ -3,7 +3,7 @@ type ButtonProps = {
     children: string
 }
 export default function Button({className, children}: ButtonProps){
-    return <button className={`${className} border rounded-full p-2`}>
+    return <button className={`${className} border text-sm rounded-full px-2 py-1`}>
         {children}
     </button>
 }

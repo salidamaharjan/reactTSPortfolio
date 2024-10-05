@@ -8,15 +8,17 @@ function App() {
       <div className="bg-gray-100 flex flex-col gap-1">
           <Header/>
           <Section className="flex justify-between gap-6 items-center">
-              <div className="flex h-20 w-20 border items-center justify-center border-black rounded-full">
+              <div className="flex h-32 w-32 border items-center justify-center border-black rounded-full">
                   <Image src="" alt="Image"/>
               </div>
               <div className="flex flex-col gap-6 flex-1 p-4">
-                  <h2 className="font-bold text-xl">About Me</h2>
-                  <p>Hello I am compassionate web developer.</p>
+                  <div>
+                      <h2 className="font-bold text-xl">About Me</h2>
+                      <p>Hello I am compassionate web developer.</p>
+                  </div>
                   <div className="flex gap-2">
-                      <Button className="bg-blue-300">Biography</Button>
-                      <Button>Experience</Button>
+                      <Button className="bg-blue-300 text-white">Biography</Button>
+                      <Button className="bg-gray-300">Experience</Button>
                   </div>
               </div>
           </Section>

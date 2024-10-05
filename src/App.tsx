@@ -1,13 +1,13 @@
 import './index.css'
 import Header from "./components/Header"
-import Section from "./components/Section.tsx";
+import Card from "./components/Card.tsx";
 import Image from "./components/Image.tsx";
 import Button from "./components/Button.tsx";
 function App() {
   return (
       <div className="bg-gray-100 flex flex-col gap-1">
           <Header/>
-          <Section className="flex justify-between gap-6 items-center">
+          <Card className="flex justify-between gap-6 items-center">
               <div className="flex h-32 w-32 border items-center justify-center border-black rounded-full">
                   <Image src="" alt="Image"/>
               </div>
@@ -21,9 +21,9 @@ function App() {
                       <Button className="bg-gray-300">Experience</Button>
                   </div>
               </div>
-          </Section>
-          <Section className="flex-col">
-                <h3 className="font-bold text-lg">My Journey</h3>
+          </Card>
+          <Card>
+                <h2 className="font-bold text-xl">My Journey</h2>
                 <p>I started my coding journey in 2024.</p>
                 <h3 className="font-bold text-lg">Achievement</h3>
                  <ul>
@@ -32,7 +32,7 @@ function App() {
                      <li>3</li>
                      <li>4</li>
                  </ul>
-          </Section>
+          </Card>
       </div>
 
   )

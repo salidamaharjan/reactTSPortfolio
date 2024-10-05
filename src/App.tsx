@@ -8,7 +8,7 @@ function App() {
       <div className="bg-gray-100 flex flex-col gap-1">
           <Header/>
           <Section>
-              <div className="flex h-20 w-20 border items-center border-black rounded-full">
+              <div className="flex h-20 w-20 border items-center justify-center border-black rounded-full">
                   <Image src="" alt="Image"/>
               </div>
               <div className="flex flex-col gap-6 flex-1 p-4">

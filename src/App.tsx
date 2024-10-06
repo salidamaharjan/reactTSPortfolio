@@ -1,7 +1,6 @@
 import './index.css'
 import Header from "./components/Header"
 import Card from "./components/Card.tsx";
-import Image from "./components/Image.tsx";
 import Button from "./components/Button.tsx";
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
           <Header/>
           <Card className="flex justify-between gap-6 items-center">
               <div className="flex h-32 w-32 border items-center justify-center border-black rounded-full">
-                  <Image src="" alt="Image"/>
+                  <img src="" alt="photo"/>
               </div>
               <div className="flex flex-col gap-6 flex-1 p-4">
                   <div>

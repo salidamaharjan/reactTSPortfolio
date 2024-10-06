@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Card from "./components/Card.tsx";
 import Button from "./components/Button.tsx";
 import Label from "./components/Label.tsx";
+import Input from "./components/Input.tsx";
 function App() {
   return (
       <div className="bg-gray-100 flex flex-col gap-1">
@@ -34,14 +35,12 @@ function App() {
                      <li>2</li>
                  </ul>
           </Card>
-          <Card className="flex flex-col">
+          <Card className="flex flex-col gap-2">
               <h2 className="font-bold text-xl">Get in Touch</h2>
-              <Label htmlFor="name">
-                  Name
-              </Label>
-                <input id="name" className="border rounded"></input>
+              <Label htmlFor="name">Name</Label>
+              <Input id="name"/>
               <Label htmlFor="email">Email</Label>
-              <input id="email" className="border rounded"></input>
+              <Input id="email"/>
               <Label htmlFor="message">Message</Label>
               <textarea id="message" className="border rounded"></textarea>
               <div>
@@ -49,7 +48,6 @@ function App() {
               </div>
           </Card>
       </div>
-
   )
 }
 

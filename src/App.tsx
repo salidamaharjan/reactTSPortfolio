@@ -2,6 +2,7 @@ import './index.css'
 import Header from "./components/Header"
 import Card from "./components/Card.tsx";
 import Button from "./components/Button.tsx";
+import Label from "./components/Label.tsx";
 function App() {
   return (
       <div className="bg-gray-100 flex flex-col gap-1">
@@ -35,15 +36,14 @@ function App() {
           </Card>
           <Card className="flex flex-col">
               <h2 className="font-bold text-xl">Get in Touch</h2>
-              <label> Name
+              <Label htmlFor="name">
+                  Name
+              </Label>
                 <input id="name" className="border rounded"></input>
-              </label>
-              <label> Email
-              <input className="border rounded"></input>
-              </label>
-              <label>Message
-                  <textarea className="border rounded"></textarea>
-              </label>
+              <Label htmlFor="email">Email</Label>
+              <input id="email" className="border rounded"></input>
+              <Label htmlFor="message">Message</Label>
+              <textarea id="message" className="border rounded"></textarea>
               <div>
               <Button className="bg-blue-300 text-white">Send Message</Button>
               </div>

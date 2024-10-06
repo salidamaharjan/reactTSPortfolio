@@ -22,15 +22,31 @@ function App() {
               </div>
           </Card>
           <Card>
-                <h2 className="font-bold text-xl">My Journey</h2>
-                <p>I started my coding journey in 2024.</p>
-                <h3 className="font-bold text-lg">Achievement</h3>
+                <h2 className="font-bold text-xl">Projects</h2>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+                <h3 className="font-bold text-md">Languages</h3>
                  <ul>
                      <li>1</li>
                      <li>2</li>
-                     <li>3</li>
-                     <li>4</li>
                  </ul>
+          </Card>
+          <Card className="flex flex-col">
+              <h2 className="font-bold text-xl">Get in Touch</h2>
+              <label> Name
+                <input id="name" className="border rounded"></input>
+              </label>
+              <label> Email
+              <input className="border rounded"></input>
+              </label>
+              <label>Message
+                  <textarea className="border rounded"></textarea>
+              </label>
+              <div>
+              <Button className="bg-blue-300 text-white">Send Message</Button>
+              </div>
           </Card>
       </div>
 

@@ -4,5 +4,5 @@ type InputProps = {
     id?: string,
 }
 export default function Input({className, placeholder, id}: InputProps){
-    return<input placeholder={placeholder} id={id} className={`${className} border rounded`}/>
+    return<input placeholder={placeholder} id={id} className={`${className} border rounded-full`}/>
 }

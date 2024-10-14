@@ -5,6 +5,8 @@ import Button from "./components/Button.tsx";
 import Label from "./components/Label.tsx";
 import Input from "./components/Input.tsx";
 import TextArea from "./components/TextArea.tsx";
+import Box from "./components/Box.tsx";
+
 function App() {
   return (
       <Card className="bg-gray-100 pl-0 pr-0 flex flex-col gap-1">
@@ -27,19 +29,27 @@ function App() {
           <Card className="flex flex-col gap-2">
               <h2 className="font-bold text-xl">Projects</h2>
               <div className="grid md:grid-cols-3 gap-2 grid-cols-1 justify-between">
-                  <div className="flex flex-col gap-2 bg-yellow-200 rounded px-2 py-1 font-bold">Food and Recipes
-                      <p className="font-normal text-sm">This app helps the user to enter the ingredient and list of the food item. The user can see the recipes of their choice.</p>
+                  <Box className="bg-yellow-200">
+                      <div className="font-bold">Food and Recipes</div>
+                      <p className="font-normal text-sm">This app helps the user to enter the ingredient and list of the
+                          food item. The user can see
+                          the recipes of their choice.
+                      </p>
                       <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </div>
-                  <div className="flex flex-col gap-2 bg-blue-300 rounded px-2 py-1 font-bold">Expenses Tracker
-                      <p className="font-normal text-sm">This app helps the user to enter their expenses. The user can track their expenses.</p>
+                  </Box>
+                  <Box className="bg-blue-300">
+                      <div className="font-bold">Expenses Tracker</div>
+                      <p className="font-normal text-sm">This app helps the user to enter their expenses. The user can track their expenses.
+                      </p>
                       <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </div>
-                  <div className="flex flex-col gap-2 bg-green-300 rounded px-2 py-1 font-bold">Outdoor Antics
+                  </Box>
+                  <Box className="bg-green-300">
+                      <div className="font-bold">Outdoor Antics</div>
                       <p className="font-normal text-sm">This app helps the user to enter their expenses. The user can
-                          track their expenses.</p>
+                          track their expenses.
+                      </p>
                       <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </div>
+                  </Box>
               </div>
           </Card>
           <Card>

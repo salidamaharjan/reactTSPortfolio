@@ -6,15 +6,14 @@ import Label from "./components/Label.tsx";
 import Input from "./components/Input.tsx";
 import TextArea from "./components/TextArea.tsx";
 import Box from "./components/Box.tsx";
+import ProfileImg from "./assets/images/Salida.png";
 
 function App() {
   return (
       <Card className="bg-gray-100 pl-0 pr-0 flex flex-col gap-1">
           <Header/>
           <Card className="flex justify-between gap-6 items-center">
-              <div className="flex h-32 w-32 border items-center justify-center border-black rounded-full">
-                  <img src="" alt="photo"/>
-              </div>
+                  <img className="flex h-32 w-32 border items-center justify-center border-black rounded-full" src={ProfileImg} alt="photo"/>
               <div className="flex flex-col gap-6 flex-1 p-4">
                   <div>
                       <h2 className="font-bold text-xl">About Me</h2>
@@ -32,8 +31,7 @@ function App() {
                   <Box className="bg-yellow-200">
                       <div className="font-bold">Food and Recipes</div>
                       <p className="font-normal text-sm">This app helps the user to enter the ingredient and list of the
-                          food item. The user can see
-                          the recipes of their choice.
+                          food item. The user can see the recipes of their choice.
                       </p>
                       <Button className="bg-white font-normal w-[100px]">View Project</Button>
                   </Box>
@@ -52,8 +50,36 @@ function App() {
                   </Box>
               </div>
           </Card>
-          <Card>
+          <Card className="flex flex-col gap-2">
               <h2 className="font-bold text-xl">Skills</h2>
+              <div className="grid md:grid-cols-3 gap-2 grid-cols-1 justify-between">
+                  <Box className="text-center bg-red-300">
+                      <div>Frontend</div>
+                      <ul className="font-normal text-sm">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>TypeScript</li>
+                          <li>Java</li>
+                          <li>Tailwind</li>
+                      </ul>
+                  </Box>
+                  <Box className="text-center bg-purple-200">
+                      <div>Backend</div>
+                      <ul className="font-normal text-sm">
+                          <li>Node.js</li>
+                          <li>Express.js</li>
+                      </ul>
+                  </Box>
+                  <Box className="text-center bg-gray-300">
+                      <div>ORM</div>
+                      <ul className="font-normal text-sm">
+                          <li>Sequelize</li>
+                          <li>Postgres</li>
+                          <li>Mongoose</li>
+                      </ul>
+                  </Box>
+              </div>
           </Card>
           <Card className="flex flex-col gap-2">
               <h2 className="font-bold text-xl">Get in Touch</h2>

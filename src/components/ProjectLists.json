@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "bg": "bg-yellow-200",
+        "title": "Food and Recipes",
+        "description": "This app helps the user to enter the ingredient and list of the food item. The user can see the recipes of their choice."
+    },
+    {
+        "id": 2,
+        "bg": "bg-blue-300",
+        "title": "Expenses Tracker",
+        "description": "This app helps the user to enter their expenses. The user can track their expenses."
+    },
+    {   "id": 3,
+        "bg": "bg-green-300",
+        "title": "Outdoor Antics",
+        "description": "This app helps the user to enter their expenses. The user can track their expenses."
+    }
+]

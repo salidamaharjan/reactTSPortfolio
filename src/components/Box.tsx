@@ -1,7 +1,7 @@
 import {ReactNode} from "react";
 
 type ProjectProps = {
-    children: ReactNode,
+    children?: ReactNode,
     className?: string
 }
 export default function Box({children, className}: ProjectProps) {

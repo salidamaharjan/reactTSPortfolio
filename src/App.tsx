@@ -5,8 +5,10 @@ import Button from "./components/Button.tsx";
 import Label from "./components/Label.tsx";
 import Input from "./components/Input.tsx";
 import TextArea from "./components/TextArea.tsx";
-import Box from "./components/Box.tsx";
 import ProfileImg from "./assets/images/Salida.png";
+import Projects from "./components/Projects.tsx";
+import Box from "./components/Box.tsx";
+import AboutMe from "./pages/AboutMe.tsx";
 
 function App() {
   return (
@@ -15,10 +17,7 @@ function App() {
           <Card className="flex justify-between gap-6 items-center">
                   <img className="flex h-32 w-32 border items-center justify-center border-black rounded-full" src={ProfileImg} alt="photo"/>
               <div className="flex flex-col gap-6 flex-1 p-4">
-                  <div>
-                      <h2 className="font-bold text-xl">About Me</h2>
-                      <p>Hello I am compassionate web developer.</p>
-                  </div>
+                  <AboutMe/>
                   <div className="flex gap-2">
                       <Button className="bg-blue-300 text-white">Biography</Button>
                       <Button className="bg-gray-300">Experience</Button>
@@ -28,26 +27,7 @@ function App() {
           <Card className="flex flex-col gap-2">
               <h2 className="font-bold text-xl">Projects</h2>
               <div className="grid md:grid-cols-3 gap-2 grid-cols-1 justify-between">
-                  <Box className="bg-yellow-200">
-                      <div className="font-bold">Food and Recipes</div>
-                      <p className="font-normal text-sm">This app helps the user to enter the ingredient and list of the
-                          food item. The user can see the recipes of their choice.
-                      </p>
-                      <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </Box>
-                  <Box className="bg-blue-300">
-                      <div className="font-bold">Expenses Tracker</div>
-                      <p className="font-normal text-sm">This app helps the user to enter their expenses. The user can track their expenses.
-                      </p>
-                      <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </Box>
-                  <Box className="bg-green-300">
-                      <div className="font-bold">Outdoor Antics</div>
-                      <p className="font-normal text-sm">This app helps the user to enter their expenses. The user can
-                          track their expenses.
-                      </p>
-                      <Button className="bg-white font-normal w-[100px]">View Project</Button>
-                  </Box>
+                      <Projects/>
               </div>
           </Card>
           <Card className="flex flex-col gap-2">

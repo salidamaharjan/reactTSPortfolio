@@ -15,5 +15,17 @@
         "bg": "bg-green-300",
         "title": "Outdoor Antics",
         "description": "This app helps the user to enter their expenses. The user can track their expenses."
+    },
+    {
+        "id" : 4,
+        "bg": "bg-green-300",
+        "title": "Rock Paper Scissors",
+        "description": "This is the simple rock paper scissor game built in Java. The user get to choose from Rock, Paper and Scissor and a winner is decided in comparison with the random choice created."
+    },
+    {
+        "id" : 4,
+        "bg": "bg-yellow-200",
+        "title": "Todo App",
+        "description": "Simple todo app build in Java. The writer will be able to add the task to the file. The writer will be able to view the task in the list stored in a file."
     }
 ]

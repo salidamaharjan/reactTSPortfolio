@@ -5,10 +5,10 @@ export default function Header() {
         <h1 className="text-3xl font-bold">Salida Maharjan</h1>
         <nav>
             <ul className="flex gap-4">
-                <NavItem label="About"/>
-                <NavItem label="Projects"/>
-                <NavItem label="Skills"/>
-                <NavItem label="Contact"/>
+                <a href={"#aboutMe"}><NavItem label="About"/></a>
+                <a href={"#projects"}><NavItem label="Projects"/></a>
+                <a href={"#skills"}><NavItem label="Skills"/></a>
+                <a href={"#contact"}><NavItem label="Contact"/></a>
             </ul>
         </nav>
     </header>

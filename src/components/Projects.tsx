@@ -7,7 +7,7 @@ export default function Projects() {
         {
             projectLists.map((project) => {
                 return <ProjectDetail title={project.title} key={project.id} description={project.description} className={`${project.bg} flex`}>
-                    <Button className="bg-white font-normal w-[100px]">View Project</Button>
+                    <Button onClick={() => window.open(project.projectLink, "_blank")} className="bg-white font-normal w-[100px]">View Project</Button>
                 </ProjectDetail>
 
             })}
